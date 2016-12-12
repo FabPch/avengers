@@ -1,0 +1,30 @@
+
+<label> Filter : <input ng-model="fav.$"></label>
+<label> Filter by Alias : <input ng-model="fav.alias"></label>
+<table class="table table-bordered table-striped">
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Alias</th>
+        <th>Power</th>
+    </tr>
+
+    <tr ng-repeat="x in avengers | filter : fav | orderBy: propAv"> <!--ng-mouseover="display(x.id)" ng-mouseout="hide()"-->
+        <td ng-click="order('firstName')">{{x.firstName}}</td>
+        <td ng-click="order('lastName')">{{x.lastName}}</td>
+        <td ng-click="order('alias')">{{x.alias}}</td>
+        <td ng-click="order('power')">{{x.power}}</td>
+        <td><button type="submit" class="btn btn-danger" ng-click="remove(x.id)">Delete</button></td>
+        <td><button type="submit" class="btn btn-success" ng-click="display(x.id)">Display</button></td>
+    </tr>
+</table>
+
+
+<!--<tr ng-repeat="x in avengers | filter : fav | orderBy: propAv"> &lt;!&ndash;ng-mouseover="display(x.id)" ng-mouseout="hide()"&ndash;&gt;-->
+    <!--<td ng-click="order('firstName')">{{x.firstName | myFormatq}}</td>-->
+    <!--<td ng-click="order('lastName')">{{x.lastName}}</td>-->
+    <!--<td ng-click="order('alias')">{{x.alias}}</td>-->
+    <!--<td ng-click="order('power')">{{x.power}}</td>-->
+    <!--<td><button type="submit" class="btn btn-danger" ng-click="remove(x.id)">Delete</button></td>-->
+    <!--<td><button type="submit" class="btn btn-success" ng-click="display(x.id)">Display</button></td>-->
+<!--</tr>-->

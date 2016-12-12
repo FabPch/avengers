@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+        <title>Title</title>
+    </head>
+    <body>
+    <div ng-app="avenger" ng-controller="controlAv">
+        <div class=""row>
+            <div class="col col-md-6 col-md-offset-3">
+                <h1>Avengers <span class="badge" ng-bind="avengers.length"></span></h1>
+
+                    <p><a href="#/">Main</a></p>
+                    <a href="#part1">List</a>
+                    <a href="#part2">Add</a>
+                    <a href="#part3">3</a>
+                    <a href="#part4">4</a>
+
+                    <div ng-view></div>
+
+            </div>
+        </div>
+
+        <div class="row">
+        <div ng-show = 'showok'>
+        <carteav></carteav>
+        </div>
+        </div>
+
+    </div>
+
+    <script src="controlAv.js"></script>
+
+    </body>
+</html>

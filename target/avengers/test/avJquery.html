@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="avJquery.js"></script>
+    <title>Title</title>
+</head>
+<body>
+
+<style>
+    .boxClass {
+        width : 50px ;
+        height : 50px ;
+        background-color: chartreuse;
+    }
+
+    .boxClass1 {
+        width : 50px ;
+        height : 50px ;
+        background-color: hotpink;
+    }
+
+    .boxClass2 {
+        width : 50px ;
+        height : 50px ;
+        background-color: orangered;
+    }
+
+    .boxClass3 {
+        width : 50px ;
+        height : 50px ;
+        background-color: darkblue;
+    }
+
+    .change {
+        width : 100px ;
+        height : 100px ;
+        background-color: peachpuff;
+    }
+
+    li>ul {
+        display: none;
+    }
+
+</style>
+
+<form id="formav">
+    <div class="row">
+        <div class="col col-md-6 col-md-offset-3">
+            <h2>Recruter un avenger :</h2>
+
+            <label for="firstName" class="sr-only"> First Name </label> <input
+                type="text" id="firstName" class="form-control"
+                placeholder="First Name" name="firstName"
+                value="" required>
+            <label for="lastName" class="sr-only"> Last Name </label>
+            <input type="text" id="lastName" class="form-control"
+                   placeholder="Last Name" name="lastName" value="" required>
+            <label for="alias" class="sr-only"> Alias </label>
+            <input type="text" id="alias" class="form-control"
+                   placeholder="Alias" name="alias" value="">
+            <label for="power" class="sr-only" required> Power </label>
+            <input type="number" id="power" class="form-control" placeholder="Power"
+                   name="power" value="" required><br>
+
+            <input type="submit" value="Recruter" class="btn btn-lg btn-primary" id="recruter">
+        </div>
+    </div>
+</form>
+<br>
+
+<button id="show" class="btn btn-md btn-success">Show</button>
+<button id="hide" class="btn btn-md btn-success">Hide</button>
+<button id="toggle" class="btn btn-md btn-success">Toggle</button>
+<button id="FadeIn" class="btn btn-md btn-success">Fade In</button>
+<br>
+<br>
+
+<div id="box" class="boxClass"></div>
+<br>
+<ul>
+    <li id="java" class="menu"> Java
+        <ul>
+            <li>Spring</li>
+            <li>Hibernate</li>
+            <li>Servlet/JSP</li>
+        </ul>
+    </li>
+    <li id="javaScript" class="menu"> JavaScript
+        <ul>
+            <li>JQuery</li>
+            <li>AngularJS</li>
+        </ul>
+    </li>
+    <li id="dataBase" class="menu"> DataBase
+        <ul>
+            <li>Oracle</li>
+            <li>Postgres</li>
+            <li>MySQL</li>
+        </ul>
+    </li>
+</ul>
+<br>
+
+<div id="box1" class="boxClass1"></div>
+
+<br>
+
+<button id="1" class="btn btn-md btn-success">Show</button>
+<button id="2" class="btn btn-md btn-success">Hide</button>
+<button id="3" class="btn btn-md btn-success">Toggle</button>
+
+
+</body>
+</html>
